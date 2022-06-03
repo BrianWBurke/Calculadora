@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+
+    text-align: center;
+
+    /* cor do fundo linear, do preto para o azul */
+    background-image: linear-gradient(45deg, black, dodgerblue);
+
+    /* ocupação da pagina inteira para o backgroung */
+    height: 100vh;
+
+    /* cor da letra */
+    color: white;
+
+    /* fonte */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.calculadora{
+    padding: 15px;
+    /* ocupa somente o seu espaço */
+    position: absolute;
+    /* fundo calculadora com opacidade*/
+    background-color: rgba(0,0,0,0.8);
+
+    /* centraliza a div */
+    top: 50%;
+    left: 50%;
+
+    /* centraliza a calculadora no meio */
+    transform: translate(-50%, -50%);
+
+    /* arredondar cantos da calculadora */
+    border-radius: 15px;    
+}
+
+button{
+    /* altura, comprimento e tamanho da fonte */
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+
+    /* espaço entre um botão e outro */
+    margin: 3px;
+
+    /* alterar cursor do mouse para pointer quando mouse estiver em cima do botão */
+    cursor: pointer;
+    /* cor de fundo do botão */
+    background-color: rgb(31,31,31);
+    /* sem borda */
+    border: none;
+    /* cor da fonte */
+    color: white;    
+}
+
+/* quando o mouse passar em cima do botão mudar de cor */
+button:hover{
+    background-color: black;
+}
+
+#resultado{
+    background-color: white;
+    width: 215px;
+    height: 30px;    
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+
+}
